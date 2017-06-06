@@ -52,7 +52,7 @@ print "Records update successfully";
 
  
  # insert value in table 
- cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \ 
+ cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) / 
        VALUES ('tiya', 'soni', 22, 'female', 26000.00 )"); 
 print "Records insertsuccessfully" 
  

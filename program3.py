@@ -60,7 +60,7 @@ cursor.execute("DELETE from EMP where LAST_NAME = 'jain'")
 conn.commit() 
  #display data here after updation 
 cursor.execute ("SELECT FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME from EMP ") 
- for row in cursor: 
+for row in cursor: 
    print "FIRST_NAME = ", row[0] 
    print "LAST_NAME = ", row[1] 
    print "AGE = ", row[2] 

@@ -25,7 +25,7 @@ print "Records insert successfully"
  
  #display data here 
 cursor.execute ("SELECT FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME from EMP ") 
- for row in cursor: 
+for row in cursor: 
     print "FIRST_NAME = ", row[0] 
     print "LAST_NAME = ", row[1] 
     print "AGE = ", row[2] 

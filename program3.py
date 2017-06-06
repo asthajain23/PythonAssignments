@@ -1,4 +1,4 @@
-import sqlite3 
+ import sqlite3 
 conn = sqlite3.connect('emp12.db') 
 print "Opened database successfully"; 
 # prepare a cursor object using cursor() method 
@@ -20,7 +20,7 @@ print "table create successfully"
 # insert value in table 
 cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \
      VALUES ('astha', 'jain', 21, 'female', 20000.00 )"); 
-print "Records insert successfully" 
+print "Records inserted successfully" 
  
  
  #display data here 
@@ -47,12 +47,12 @@ for row in cursor:
     print "SEX = ", row[3] 
     print "INCOME= ", row[4],"\n" 
 conn.commit() 
-print "Records update successfully";
+print "Records updated successfully";
 
  # insert value in table 
-cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \ 
+cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \
        VALUES ('tiya', 'soni', 22, 'female', 26000.00 )"); 
-print "Records insertsuccessfully" 
+print "Records inserted successfully" 
  
  
  # delete 

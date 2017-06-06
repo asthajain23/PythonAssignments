@@ -20,7 +20,7 @@ print "table create successfully"
 # insert value in table 
 cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \
      VALUES ('astha', 'jain', 21, 'female', 20000.00 )"); 
- print "Records insert successfully" 
+print "Records insert successfully" 
  
  
  #display data here 

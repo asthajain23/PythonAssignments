@@ -3,8 +3,8 @@
 def largerValue(a, b): 
 	if a > b:       
 		print(str(a) +'is larger than' + str(b))    
-else:        
-	print (str(b) +' is larger than ' + str(a))
+	else:        
+		print (str(b) +' is larger than ' + str(a))
 
 print ('Enter the first number')
 aA = input()

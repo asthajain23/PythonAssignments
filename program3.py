@@ -11,16 +11,16 @@ sql = """CREATE TABLE EMP (
          FIRST_NAME  CHAR(20) NOT NULL, 
          LAST_NAME  CHAR(20), 
          AGE INT,   
-          SEX CHAR(1), 
-          INCOME FLOAT )""" 
+         SEX CHAR(1), 
+         INCOME FLOAT )""" 
  
  
 cursor.execute(sql) 
 print "table create successfully" 
 # insert value in table 
-cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \ 
+cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \
      VALUES ('astha', 'jain', 21, 'female', 20000.00 )"); 
- print "Records insertsuccessfully" 
+ print "Records insert successfully" 
  
  
  #display data here 
@@ -39,7 +39,7 @@ cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \
  cursor.execute("UPDATE EMP set INCOME=25000 where FIRST_NAME='astha'") 
  conn.commit() 
  #display data here after updation 
-cursor.execute ("SELECT FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME from EMP ") 
+ cursor.execute ("SELECT FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME from EMP ") 
  for row in cursor: 
     print "FIRST_NAME = ", row[0] 
     print "LAST_NAME = ", row[1] 
@@ -52,7 +52,7 @@ print "Records update successfully";
 
  
  # insert value in table 
- cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) / 
+ cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \ 
        VALUES ('tiya', 'soni', 22, 'female', 26000.00 )"); 
 print "Records insertsuccessfully" 
  

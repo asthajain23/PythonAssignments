@@ -31,8 +31,8 @@ for row in cursor:
     print "AGE = ", row[2] 
     print "SEX = ", row[3] 
     print "INCOME= ", row[4],"\n" 
- conn.commit() 
- print "Operation done successfully" 
+conn.commit() 
+print "Operation done successfully" 
  
  
  #update data 

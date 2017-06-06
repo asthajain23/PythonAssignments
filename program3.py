@@ -36,11 +36,11 @@ print "Operation done successfully"
  
  
  #update data 
- cursor.execute("UPDATE EMP set INCOME=25000 where FIRST_NAME='astha'") 
- conn.commit() 
+cursor.execute("UPDATE EMP set INCOME=25000 where FIRST_NAME='astha'") 
+conn.commit() 
  #display data here after updation 
- cursor.execute ("SELECT FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME from EMP ") 
- for row in cursor: 
+cursor.execute ("SELECT FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME from EMP ") 
+for row in cursor: 
     print "FIRST_NAME = ", row[0] 
     print "LAST_NAME = ", row[1] 
     print "AGE = ", row[2] 

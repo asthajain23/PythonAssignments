@@ -27,8 +27,8 @@ cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \
  cursor.execute ("SELECT FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME from EMP ") 
  for row in cursor: 
     print "FIRST_NAME = ", row[0] 
-   print "LAST_NAME = ", row[1] 
-   print "AGE = ", row[2] 
+    print "LAST_NAME = ", row[1] 
+    print "AGE = ", row[2] 
     print "SEX = ", row[3] 
     print "INCOME= ", row[4],"\n" 
  conn.commit() 
@@ -49,10 +49,8 @@ cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \
 conn.commit() 
 print "Records update successfully";
 
-
- 
  # insert value in table 
- cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \ 
+cursor.execute ("INSERT INTO EMP(FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME) \ 
        VALUES ('tiya', 'soni', 22, 'female', 26000.00 )"); 
 print "Records insertsuccessfully" 
  
@@ -64,9 +62,9 @@ conn.commit()
 cursor.execute ("SELECT FIRST_NAME, LAST_NAME, AGE, SEX ,INCOME from EMP ") 
  for row in cursor: 
    print "FIRST_NAME = ", row[0] 
-    print "LAST_NAME = ", row[1] 
-    print "AGE = ", row[2] 
-    print "SEX = ", row[3] 
-    print "INCOME= ", row[4],"\n" 
+   print "LAST_NAME = ", row[1] 
+   print "AGE = ", row[2] 
+   print "SEX = ", row[3] 
+   print "INCOME= ", row[4],"\n" 
 print "Records distroyed successfully"; 
 conn.close()

@@ -9,4 +9,4 @@ print str
 '''Output
 python eighteenth.py
 Enter your input: asthajain
-Received input is :  asthajainniajahtsa'''
+Received input is : niajahtsa'''

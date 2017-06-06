@@ -1,4 +1,4 @@
- import sqlite3 
+import sqlite3 
 conn = sqlite3.connect('emp12.db') 
 print "Opened database successfully"; 
 # prepare a cursor object using cursor() method 

@@ -6,7 +6,7 @@ def biggest (a, b, c):
 		imax = b    
 	elif (c > imax):
 		imax = c    
-	return imaxprint 
+	return imax 
 
 print (biggest(5,6,7))
 

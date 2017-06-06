@@ -1,3 +1,9 @@
+'''Write a python standalone program for: 
+2              a. insert some values [eg. employee details]in db table. 
+3              b. fetch the same data and print it on standard output. 
+4              c. update specific employee info. 
+5              d. delete specific employee and all the info. '''
+
 import sqlite3 
 conn = sqlite3.connect('emp12.db') 
 print "Opened database successfully"; 
@@ -68,3 +74,28 @@ for row in cursor:
    print "INCOME= ", row[4],"\n" 
 print "Records distroyed successfully"; 
 conn.close()
+
+
+'''Output 
+python third.py
+Opened database successfully
+table create successfully
+Records inserted successfully
+FIRST_NAME =  asthaLAST_NAME =  jain
+AGE =  21
+SEX =  female
+INCOME=  20000.0 
+Operation done successfully
+FIRST_NAME =  astha
+LAST_NAME =  jain
+AGE =  21SEX =  female
+INCOME=  25000.0 
+Records updated successfull
+yRecords inserted successfully
+FIRST_NAME =  aditi 
+LAST_NAME =  soni
+AGE =  22
+SEX =  female
+INCOME=  26000.0 
+Records distroyed successfully
+'''

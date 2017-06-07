@@ -1,18 +1,18 @@
 
 #Write a function find_longest_word() that takes a list of words and returns the length of the longest one
 
-def find_longest_word():
-   list1 = ['a','aa','aaa','aaaa','aaaaa','aaaaaa','aaaaaaa','asthaaaaaa',]
-   max1 = ''
-   for x in range (0, len(list1)):
-      if (len(max1) < len(list1[x]) ):
-          max1 = list1[x]
-   return max1    
+def main ():
+    text = input("Please input a List of words to evaluate: ")
+
+    longest = 0
+
+    for words in text.split():
+           if len(words) > longest:
+                  longest = len(words)
+    print ("The longest word is", words, "with lenght", longest)
 
 
-def main():
-    m = find_longest_word()
-    print len(m)
+main()
 
 '''Output 
 python nineteen.py

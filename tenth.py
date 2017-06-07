@@ -1,6 +1,6 @@
 #Define a function that computes the length of a given list or string.
 
-def length(object):#Define the length calculation function
+def length(object):
     count = 0      
     object =raw_input("Enter the string")
     for i in object:

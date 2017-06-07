@@ -6,7 +6,7 @@ def length(object):
     for i in object:
         count=count+1
     print("Length of the string is"+str(count))
- length(object)
+length(object)
 
 '''Output
 python tenth.py

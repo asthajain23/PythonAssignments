@@ -1,6 +1,8 @@
+
 #Write a function find_longest_word() that takes a list of words and returns the length of the longest one
 
-text="my name is astha and i love pragyaaaaaaaaaa"longest=0
+text="my name is astha and i love pragyaaaaaaaaaa"
+longest=0
 for word in text.split():
         if len(word) > longest:
                 longest=len(word)

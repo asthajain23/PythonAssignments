@@ -5,7 +5,7 @@ def length(object):#Define the length calculation function
     object =raw_input("Enter the string")
     for i in object:
         count=count+1
-    print("Length of the string is"+str(count))length(object)
+print("Length of the string is"+str(count))length(object)
 
 '''Output
 python tenth.py
